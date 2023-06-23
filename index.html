@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+ 
+    <title>SuperPelis</title>
+</head>
+<body>
+    <div class="titleImg">
+        <img src="./img/8eb88efaa56290f2a95a304885d5daa8.png" alt="">
+    </div>
+    
+    <div class="filtros">
+        <label for="">Usuario:</label>
+            <select name="userId" id="userId">
+                <option value="">todos</option>
+               
+            </select>
+            <label for="rate">Calificacion</label> 
+            <select name="rate" id="rate">
+                <option value="">todas</option>
+                <option value="1">1 o mas</option>
+                <option value="2">2 o mas</option>
+                <option value="3">3 o mas</option>
+                <option value="4">4 o mas</option>
+                <option value="5">5 o mas</option>
+                <option value="6">6 o mas</option>
+                <option value="7">7 o mas</option>
+                <option value="8">8 o mas</option>
+                <option value="9">9 o mas</option>
+                <option value="10">10</option>
+            </select>
+            <label for="fromDate"> Fecha desde: </label>
+            <input type="date" name="fromDate" id="fromDate">
+            <label for="toDate"> hasta: </label>
+            <input type="date" name="toDate" id="toDate">
+            <button id="btnFilter">Aplicar filtros</button>
+    </div>
+    <div class="cardContainer" id="moviesList">
+        
+    </div>
+    <button class="back-to-top hidden"> <img src="./img/icon_top.png" alt=""></button>
+
+    <script src="scripts/movies-filter.js"></script>
+</body>
+</html>
